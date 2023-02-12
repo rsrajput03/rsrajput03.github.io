@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+   
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #36454f;
+    color: white;
+  }
+  
+  h1 {
+    font-size: 60px;
+    font-style: italic;
+    color: #17cf97;
+    padding: 0px;
+    text-align: center;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 40px;
+    font-family: sans-serif;
+    color: #17cf97;
+  }
+  
+  h3 {
+    color: #17cf97;
+    text-align: center;
+    font-size: 30px;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
+  h4 {
+    font-weight: 200;
+    font-family: sans-serif;
+    line-height: 35px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* Navbar */
+  
+  #navbar {
+    position: fixed;
+    z-index: 1;
+    background-color: #344d67;
+    top: 0;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    width: 100%;
+  }
+  
+  
+  
+  #nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #nav-menu .resume {
+    margin: 0px;
+  }
+  
+  #resume-button-1:hover {
+    color: white;
+  }
+  
+  #resume-button-1:active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+  #resume-button-2:hover {
+    color: white;
+  }
+  #resume-button-2:active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 10px;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .nav-link:hover {
+    color: #17cf97;
+  }
+  
+  .nav-link:hover::after {
+    height: 2px;
+    background: #17cf97;
+    position: absolute;
+    bottom: -4px;
+    left: 10px;
+  }
+  
+  .nav-link:active {
+    background: white;
+    color: black;
+  }
+  
+  .hamburger {
+    display: none;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+  }
+  
+  /* Home */
+  #home {
+    width: 70%;
+    margin: auto;
+    margin-top: 15%;
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home-img {
+    border-radius: 50%;
+    width: 20%;
+    
+  }
+  
+  /* About */
+  #about {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+  }
+  
+  #user-detail-intro {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 40px;
+    text-align: justify;
+  }
+  
+  /* Skills */
+  
+  .skills-card-img {
+    width: 50%;
+  }
+  
+  #skills {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 90%;
+    margin: auto;
+  }
+  
+  #skillsflex {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Projects */
+  
+  #projects {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  #projectsflex {
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .project-card {
+    text-align: center;
+    width: 100%;
+  }
+  .project-card img {
+    text-align: center;
+    width: 100%;
+  }
+  .project-github-link,
+  .project-deployed-link,
+  .resume,
+  .contactlinks {
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(1, 242, 162);
+    margin-bottom: 40px;
+  }
+  .project-github-link:hover,
+  .project-deployed-link:hover,
+  .contactlinks:hover {
+    background-color: #17cf97;
+  }
+  .project-github-link:active,
+  .project-deployed-link:active,
+  .contactlinks:active {
+    transform: scale(0.85);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+  }
+  .project-tech-stack {
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  #stats_div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  #stats_div > div:first-child {
+    width: 47%;
+  }
+  #stats_div > div:last-child {
+    width: 40%;
+  }
+  #stats_div img {
+    width: 100%;
+  }
+  #calendar {
+    margin: auto;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .contrib-column {
+    display: none;
+  }
+  .react-activity-calendar {
+    margin: auto;
+    width: 70%;
+  }
+  .styles_calendar__kghkr {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+  .project-tech-stack strong {
+    color: rgb(1, 242, 162);
+  }
+  
+  .contact-src {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .contact-src div {
+    align-items: center;
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .contact-icons {
+    width: 40px;
+    height: 40px;
+  }
+  
+  
+  /* Phone */
+  
+  @media only screen and (max-width: 640px) {
+    #nav-menu {
+      position: absolute;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: rgb(255, 255, 255);
+      color: #101010;
+      width: 100%;
+      border-radius: 10px;
+      transition: 0.3s;
+      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+      padding: 10px;
+      margin: 8px 0px;
+    }
+    .nav-link {
+      color: #101010;
+      padding: 10px 0px;
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      margin: 4px;
+    }
+    .nav-link:active {
+      background: white;
+      color: black;
+    }
+    #nav-menu.active {
+      left: 0;
+    }
+    #navbar {
+      width: 100%;
+    }
+    #navbar img {
+      width: 65px;
+      border-radius: 50%;
+    }
+    #home{
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    #home img {
+      border-radius: 50%;
+      width: 80%;
+    }
+    
+    .hamburger {
+      display: block;
+      cursor: pointer;
+      
+    }
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    #projectsflex {
+      margin: auto;
+      width: 80%;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    }
+    #stats_div {
+      display: block;
+      width: 60%;
+      margin: auto;
+    }
+    #stats_div > div:first-child {
+      width: 100%;
+    }
+    #stats_div > div:last-child {
+      width: 100%;
+    }
+  
+    #skillsflex {
+      width: 60%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+  
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  
+    #Contactofme {
+      width: 40%;
+    }
+  
+    .contact-src {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-src div {
+      align-items: center;
+      width: 100%;
+      display: flex;
+      margin-top: 30px;
+      justify-content: center;
+      flex-direction: column;
+      gap: 5px;
+      margin-bottom: 15px;
+    }
+  
+    .contact-icons {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .contactlinks {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      text-decoration: none;
+      color: white;
+      margin: 2px;
+      padding: 5px;
+      background-color: rgb(1, 242, 162);
+    }
+  
+    #user-detail-name {
+      font-size: 140%;
+    }
+    #user-detail-name #name {
+      font-size: 200%;
+    }
+    #user-detail-intro {
+      width: 90%;
+      margin-bottom: 10px;
+      text-align: justify;
+    }
+    .react-activity-calendar {
+      margin: auto;
+      width: 90%;
+    }
+  }
+  
