@@ -19,9 +19,9 @@ function close() {
 
 GitHubCalendar(".react-activity-calendar", "rsrajput03", { responsive: true });
 
-// document.getElementById("resume-button-2").onclick = () => {
-//   location.href = "\\Icons\\pdf\\Rohit-Rajput-Resume.pdf";
-// };
-document.getElementById("resume-button-1").onclick = () => {
+document.getElementById("resume-button-2").onclick = () => {
   location.href = "\\Icons\\pdf\\Rohit-Rajput-Resume.pdf";
 };
+// document.getElementById("resume-button-1").onclick = () => {
+//   location.href = "\\Icons\\pdf\\Rohit-Rajput-Resume.pdf";
+// };
