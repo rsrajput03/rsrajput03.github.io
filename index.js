@@ -19,7 +19,21 @@ function close() {
 
 GitHubCalendar(".react-activity-calendar", "rsrajput03", { responsive: true });
 
-document.getElementById("resume-button-2").onclick = () => {
-  window.open("\\Icons\\pdf\\Rohit-Rajput-Resume.pdf",'_blank')
-};
+// document.getElementById("resume-button-2").onclick = () => {
+//   window.open("\\Icons\\pdf\\Rohit-Rajput-Resume.pdf",'_blank')
+// };
 
+document
+  .getElementById("resume-button-2")
+  .addEventListener("click", function () {
+    window.open("\\Icons\\pdf\\Rohit-Rajput-Resume.pdf", "_blank");
+    event.preventDefault();
+    downloadPDF("\\Icons\\pdf\\Rohit-Rajput-Resume.pdf");
+  });
+
+function downloadPDF(url) {
+  var link = document.createElement("a");
+  link.href = url;
+  link.download = "Rohit_Rajput_Resume.pdf";
+  link.dispatchEvent(new MouseEvent("click"));
+}
