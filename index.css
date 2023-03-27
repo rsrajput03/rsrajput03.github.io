@@ -83,12 +83,17 @@
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
   }
-  #resume-button-2:hover {
+  #resume-link-2:hover {
     color: white;
   }
 
+  #resume-button-2{
+    background: transparent;
+    color: white;
+    border: none;
+  }
  
-  #resume-button-2:active {
+  #resume-link-2:active {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
   }
