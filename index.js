@@ -19,8 +19,8 @@ function close() {
 
 GitHubCalendar(".react-activity-calendar", "rsrajput03", { responsive: true });
 
-document.getElementById("resume-link-2").onclick = () => {
-  window.open("https://drive.google.com/file/d/1jf5u4mDFteaROdiA6DsIVXLeEo9FsDv2/view?usp=share_link",'_blank')
+document.getElementById("resume-button-2").onclick = () => {
+ return window.open("https://drive.google.com/uc?export=download&id=1jf5u4mDFteaROdiA6DsIVXLeEo9FsDv2")
 };
 
 
