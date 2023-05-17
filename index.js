@@ -22,13 +22,14 @@ GitHubCalendar(".react-activity-calendar", "rsrajput03", { responsive: true });
 
 let resume1 = document.getElementById("resume-link-1")
 resume1.onclick =()=>{
-    window.open("https://drive.google.com/file/d/1OuJwvvtVAUcXrGb24_iYCqOWX3Dvr9l5/view?usp=share_link")
+    window.open("https://drive.google.com/file/d/1OuJwvvtVAUcXrGb24_iYCqOWX3Dvr9l5/view")
 }
 
-let resume2 = document.getElementById("resume-link-2")
-resume2.onclick = () =>{
-    window.open("https://drive.google.com/file/d/1OuJwvvtVAUcXrGb24_iYCqOWX3Dvr9l5/view?usp=share_link")
+let resume2 = document.getElementById("resume-button-2")
+resume2.onclick =()=>{
+    window.open("https://drive.google.com/file/d/1OuJwvvtVAUcXrGb24_iYCqOWX3Dvr9l5/view")
 }
+
 
 
 
